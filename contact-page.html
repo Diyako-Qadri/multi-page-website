@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High1 Athlete</title>
+  <link rel="stylesheet" href="./contact-page.css" />
+  <link rel="stylesheet" href="./headerfooter.css">
+</head>
+
+<body>
+  <header class="header-main">
+    <div class="header-main-logo">
+      <a href="./home-page.html"><img src="./img/Highonlogga.png" alt="High1" /></a>
+    </div>
+    <nav class="header-main-nav">
+      <div class="mobile-menu__trigger">
+        <ul>
+          <li><a class="menu__item" href="./programs-page.html">PROGRAMS</a></li>
+          <li><a class="menu__item" href="./shop-page.html">SHOP</a></li>
+          <li><a class="menu__item" href="#">ABOUT US</a></li>
+          <li><a class="menu__item" href="./contact-page.html">CONTACT</a></li>
+          <div class="overlay"></div>
+      </div>
+    </nav>
+  </header> 
+
+  <section class="main fotm-content">
+    <div>
+      <h2>Contact Us</h2>
+    </div>
+    <form action="mailto: high1athlete@email.com" method="post" enctype="text/plain">
+    <fieldset class="">
+      <legend>Send a request</legend>
+      <div class="field name">
+        <label class="required" for="name">Name</label>
+        <input type="text" id="name" name="Name" placeholder="" minlength="6" required/>
+      </div>
+      <div class="field mail">
+        <label class="required" for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="" minlength="13" required/>
+      </div>
+      <div class="field phone">
+        <label class="required" for="phone">Phone</label>
+        <input type="number" id="phone" name="email" minlength="8" required/>
+      </div>
+      <div class="field message">
+        <label class="required" for="message" required>Message</label>
+        <textarea name="message" id="message" cols="25" rows="10" placeholder="message" required></textarea>
+      </div>
+      <p><span class="required"></span>is a required field</p>
+    </fieldset>
+    <button type="submit">SEND IT</button>
+</form>
+  </section>
+  <footer>
+    <div class="social-medial-icons">
+      <a href="www.instagram.com" target="_blank">
+        <img src="./img/icons8-instagram-30.png" alt="Instagram">
+      </a>
+      <a href="www.youtube.com" target="_blank">
+        <img src="./img/icons8-youtube-30.png" alt="Youtube">
+      </a>
+      <a href="www.facebook.com" target="_blank">
+        <img src="./img/icons8-facebook-30.png" alt="Facebook">
+      </a>
+    </div>
+    <p>©️Copyright</p>
+  </footer>
+</body>
+
+</html>

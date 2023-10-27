@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+  background-image: url(./img/backgroundimgBW.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+  min-height: 100vh;
+  flex-grow: 1;
+
+  overflow: hidden scroll;
+}
+
+.main-content {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.description {
+  color: aliceblue;
+  font-size: 2rem;
+  backdrop-filter: blur(3px);
+  padding: 30px 0;
+  z-index: 5;
+}
+
+.read-more a {
+  text-decoration: none;
+  z-index: 1;
+  color: #dee2e6;
+  background-color: #121212;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow:5px 5px 10px rgba(0, 0, 0, 0.3) ;
+}
+
+ @media screen and (min-width: 860px) {
+    
+    .main-content{
+      justify-content: center;
+    }
+    
+}  
+
+  
+
+
